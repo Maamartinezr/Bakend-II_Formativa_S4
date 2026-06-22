@@ -169,11 +169,20 @@ class VentaServiceImplTest {
     @Test
     void calcularTotalConCantidadNegativa_DebeRechazar() {
         // Arrange
-        Venta venta = crearVentaConDetalles(-5, 1); // Cantidad negativa
-        Producto arroz = crearProducto(10L, "Arroz", 1200.0, 20);
+        Venta venta = new Venta();
+        Usuario usuario = new Usuario();
+        usuario.setId(1L);
+        venta.setUsuario(usuario);
+        venta.setFecha(new Date());
 
-        when(usuarioRepository.findById(1L)).thenReturn(Optional.of(crearUsuarioValido("EMPLEADO")));
-        when(productoRepository.findById(10L)).thenReturn(Optional.of(arroz));
+        DetalleVenta detalle = new DetalleVenta();
+        detalle.setProducto(crearProducto(10L, "Arroz", 1200.0, 20));
+        detalle.setCantidad(-5); // Cantidad negativa
+        detalle.setVenta(venta);
+
+        venta.setDetalles(List.of(detalle));
+
+        when(productoRepository.findById(10L)).thenReturn(Optional.of(crearProducto(10L, "Arroz", 1200.0, 20)));
 
         // Act & Assert
         boolean tieneStock = ventaService.tieneStockSuficiente(venta);
@@ -183,10 +192,20 @@ class VentaServiceImplTest {
     @Test
     void calcularTotalConCantidadCero_DebeRechazar() {
         // Arrange
-        Venta venta = crearVentaConDetalles(0, 1); // Cantidad cero
-        Producto arroz = crearProducto(10L, "Arroz", 1200.0, 20);
+        Venta venta = new Venta();
+        Usuario usuario = new Usuario();
+        usuario.setId(1L);
+        venta.setUsuario(usuario);
+        venta.setFecha(new Date());
 
-        when(productoRepository.findById(10L)).thenReturn(Optional.of(arroz));
+        DetalleVenta detalle = new DetalleVenta();
+        detalle.setProducto(crearProducto(10L, "Arroz", 1200.0, 20));
+        detalle.setCantidad(0); // Cantidad cero
+        detalle.setVenta(venta);
+
+        venta.setDetalles(List.of(detalle));
+
+        when(productoRepository.findById(10L)).thenReturn(Optional.of(crearProducto(10L, "Arroz", 1200.0, 20)));
 
         // Act & Assert
         boolean tieneStock = ventaService.tieneStockSuficiente(venta);
@@ -221,9 +240,28 @@ class VentaServiceImplTest {
     @Test
     void detalleVentaProductoNoEncontrado_DebeHandlear() {
         // Arrange
-        Venta venta = crearVentaConDetalles(2, 1);
-        when(usuarioRepository.findById(1L)).thenReturn(Optional.of(crearUsuarioValido("EMPLEADO")));
+        Venta venta = new Venta();
+        Usuario usuario = new Usuario();
+        usuario.setId(1L);
+        venta.setUsuario(usuario);
+        venta.setFecha(new Date());
+
+        DetalleVenta detalle1 = new DetalleVenta();
+        detalle1.setProducto(new Producto());
+        detalle1.getProducto().setId(10L);
+        detalle1.setCantidad(2);
+        detalle1.setVenta(venta);
+
+        DetalleVenta detalle2 = new DetalleVenta();
+        detalle2.setProducto(new Producto());
+        detalle2.getProducto().setId(11L);
+        detalle2.setCantidad(1);
+        detalle2.setVenta(venta);
+
+        venta.setDetalles(List.of(detalle1, detalle2));
+
         when(productoRepository.findById(10L)).thenReturn(Optional.empty()); // Producto no encontrado
+        when(productoRepository.findById(11L)).thenReturn(Optional.empty());
 
         // Act & Assert
         boolean tieneStock = ventaService.tieneStockSuficiente(venta);
@@ -262,15 +300,27 @@ class VentaServiceImplTest {
 
     @ParameterizedTest
     @CsvSource({
-            "1200.0, 2, 2400.0",      // Caso normal
-            "950.5, 3, 2851.5",        // Precio decimal
-            "100.0, 1, 100.0",         // Una unidad
-            "0.99, 100, 99.0"          // Muchas unidades
+            "1200.0, 2",      // Caso normal
+            "950.5, 3",        // Precio decimal
+            "100.0, 1",        // Una unidad
+            "0.99, 100"        // Muchas unidades
     })
-    void calcularTotalMultiplesCombinaciones(Double precio, Integer cantidad, Double esperado) {
-        // Arrange
-        Venta venta = crearVentaConDetalles(cantidad, 1);
+    void calcularTotalMultiplesCombinaciones(Double precio, Integer cantidad) {
+        // Arrange - Crear venta con UN SOLO detalle
+        Venta venta = new Venta();
+        Usuario usuario = crearUsuarioValido("EMPLEADO");
+        venta.setUsuario(usuario);
+        venta.setFecha(new Date());
+
         Producto producto = crearProducto(10L, "Producto", precio, 100);
+        
+        DetalleVenta detalle = new DetalleVenta();
+        detalle.setProducto(producto);
+        detalle.setCantidad(cantidad);
+        detalle.setPrecio(precio);
+        detalle.setVenta(venta);
+
+        venta.setDetalles(List.of(detalle));
 
         when(productoRepository.findById(10L)).thenReturn(Optional.of(producto));
 
@@ -278,7 +328,8 @@ class VentaServiceImplTest {
         double total = ventaService.calcularTotal(venta);
 
         // Assert
-        assertEquals(esperado, total, 0.01, "Cálculo debe ser preciso");
+        double esperado = precio * cantidad;
+        assertEquals(esperado, total, 0.01, "Cálculo debe ser preciso para " + precio + " x " + cantidad);
     }
 
     // ============= PRUEBAS DE PRECISIÓN MONETARIA =============
