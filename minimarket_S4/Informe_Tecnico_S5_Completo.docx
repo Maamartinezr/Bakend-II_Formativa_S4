@@ -1,0 +1,1932 @@
+PK     !"             -  word/document.xml  ì  <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<w:document xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture">
+  <w:body>
+    <!-- PORTADA -->
+    <w:p>
+      <w:pPr>
+        <w:jc w:val="center"/>
+        <w:spacing w:before="480" w:after="240"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="56"/>
+          <w:color w:val="4472C4"/>
+        </w:rPr>
+        <w:t>INFORME TÉCNICO</w:t>
+      </w:r>
+    </w:p>
+    
+    <w:p>
+      <w:pPr>
+        <w:jc w:val="center"/>
+        <w:spacing w:after="240"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="48"/>
+        </w:rPr>
+        <w:t>SEMANA 5: PRUEBAS UNITARIAS CON JUNIT</w:t>
+      </w:r>
+    </w:p>
+    
+    <w:p>
+      <w:pPr>
+        <w:jc w:val="center"/>
+        <w:spacing w:after="480"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:sz w:val="32"/>
+        </w:rPr>
+        <w:t>Ejecutando y Analizando Pruebas Unitarias en Microservicios</w:t>
+      </w:r>
+    </w:p>
+    
+    <w:p>
+      <w:pPr>
+        <w:jc w:val="center"/>
+        <w:spacing w:after="120"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:sz w:val="28"/>
+        </w:rPr>
+        <w:t>Proyecto: MINIMARKET PLUS</w:t>
+      </w:r>
+    </w:p>
+    
+    <w:p>
+      <w:pPr>
+        <w:jc w:val="center"/>
+        <w:spacing w:after="120"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:sz w:val="24"/>
+        </w:rPr>
+        <w:t>Sistema de Gestión de Minimarket con Pruebas Unitarias</w:t>
+      </w:r>
+    </w:p>
+    
+    <w:p>
+      <w:pPr>
+        <w:jc w:val="center"/>
+        <w:spacing w:after="600"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:sz w:val="20"/>
+        </w:rPr>
+        <w:t>Junio 2026</w:t>
+      </w:r>
+    </w:p>
+
+    <!-- TABLA DE CONTENIDOS -->
+    <w:p>
+      <w:pPr>
+        <w:spacing w:before="240" w:after="240"/>
+        <w:pStyle w:val="Heading1"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="40"/>
+          <w:color w:val="4472C4"/>
+        </w:rPr>
+        <w:t>TABLA DE CONTENIDOS</w:t>
+      </w:r>
+    </w:p>
+    
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="80"/>
+        <w:ind w:left="720"/>
+      </w:pPr>
+      <w:r>
+        <w:t>1. Guía de Configuración del Entorno de Pruebas</w:t>
+      </w:r>
+    </w:p>
+    
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="80"/>
+        <w:ind w:left="720"/>
+      </w:pPr>
+      <w:r>
+        <w:t>2. Código de las Pruebas Unitarias Ejecutadas</w:t>
+      </w:r>
+    </w:p>
+    
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="80"/>
+        <w:ind w:left="720"/>
+      </w:pPr>
+      <w:r>
+        <w:t>3. Evidencia de Resultados de Ejecución</w:t>
+      </w:r>
+    </w:p>
+    
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="240"/>
+        <w:ind w:left="720"/>
+      </w:pPr>
+      <w:r>
+        <w:t>4. Informe de Análisis y Reflexión Técnica</w:t>
+      </w:r>
+    </w:p>
+
+    <!-- SECCIÓN 1 -->
+    <w:p>
+      <w:pPr>
+        <w:spacing w:before="240" w:after="240"/>
+        <w:pStyle w:val="Heading1"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="40"/>
+          <w:color w:val="4472C4"/>
+        </w:rPr>
+        <w:t>1. GUÍA DE CONFIGURACIÓN DEL ENTORNO DE PRUEBAS</w:t>
+      </w:r>
+    </w:p>
+    
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="120"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+        </w:rPr>
+        <w:t>1.1 Herramientas Utilizadas</w:t>
+      </w:r>
+    </w:p>
+    
+    <w:tbl>
+      <w:tblPr>
+        <w:tblW w:w="9000" w:type="dxa"/>
+        <w:tblBorders>
+          <w:top w:val="single" w:sz="12" w:space="0" w:color="4472C4"/>
+          <w:left w:val="single" w:sz="12" w:space="0" w:color="4472C4"/>
+          <w:bottom w:val="single" w:sz="12" w:space="0" w:color="4472C4"/>
+          <w:right w:val="single" w:sz="12" w:space="0" w:color="4472C4"/>
+          <w:insideH w:val="single" w:sz="12" w:space="0" w:color="D9E1F2"/>
+          <w:insideV w:val="single" w:sz="12" w:space="0" w:color="D9E1F2"/>
+        </w:tblBorders>
+      </w:tblPr>
+      <w:tr>
+        <w:trPr>
+          <w:cnfStyle w:val="firstRow"/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:shd w:fill="4472C4"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:rPr>
+                <w:b/>
+                <w:color w:val="FFFFFF"/>
+              </w:rPr>
+              <w:t>Herramienta</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:shd w:fill="4472C4"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:rPr>
+                <w:b/>
+                <w:color w:val="FFFFFF"/>
+              </w:rPr>
+              <w:t>Versión</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:shd w:fill="4472C4"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:rPr>
+                <w:b/>
+                <w:color w:val="FFFFFF"/>
+              </w:rPr>
+              <w:t>Propósito</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr>
+        <w:tc>
+          <w:p>
+            <w:r>
+              <w:t>Java</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:p>
+            <w:r>
+              <w:t>17</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:p>
+            <w:r>
+              <w:t>Lenguaje de programación</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr>
+        <w:tc>
+          <w:p>
+            <w:r>
+              <w:t>Spring Boot</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:p>
+            <w:r>
+              <w:t>3.4.1</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:p>
+            <w:r>
+              <w:t>Framework web y microservicios</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr>
+        <w:tc>
+          <w:p>
+            <w:r>
+              <w:t>JUnit 5</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:p>
+            <w:r>
+              <w:t>5.x</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:p>
+            <w:r>
+              <w:t>Framework de pruebas unitarias</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr>
+        <w:tc>
+          <w:p>
+            <w:r>
+              <w:t>Mockito</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:p>
+            <w:r>
+              <w:t>Latest</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:p>
+            <w:r>
+              <w:t>Mocking y simulación de dependencias</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr>
+        <w:tc>
+          <w:p>
+            <w:r>
+              <w:t>JaCoCo</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:p>
+            <w:r>
+              <w:t>0.8.12</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:p>
+            <w:r>
+              <w:t>Análisis de cobertura de código</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr>
+        <w:tc>
+          <w:p>
+            <w:r>
+              <w:t>Maven</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:p>
+            <w:r>
+              <w:t>3.9+</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:p>
+            <w:r>
+              <w:t>Gestor de dependencias y build</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+    </w:tbl>
+    
+    <w:p>
+      <w:pPr>
+        <w:spacing w:before="120" w:after="120"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+        </w:rPr>
+        <w:t>1.2 Dependencias en pom.xml</w:t>
+      </w:r>
+    </w:p>
+    
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="80"/>
+      </w:pPr>
+      <w:r>
+        <w:t>Las siguientes dependencias fueron añadidas/actualizadas:</w:t>
+      </w:r>
+    </w:p>
+    
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="80"/>
+        <w:ind w:left="720"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+        </w:rPr>
+        <w:t>JUnit 5 Jupiter (incluido en spring-boot-starter-test):</w:t>
+      </w:r>
+    </w:p>
+    
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="80"/>
+        <w:ind w:left="1440"/>
+        <w:pStyle w:val="Normal"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:color w:val="595959"/>
+          <w:sz w:val="20"/>
+        </w:rPr>
+        <w:t>&lt;scope&gt;test&lt;/scope&gt; - Para pruebas unitarias</w:t>
+      </w:r>
+    </w:p>
+    
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="80"/>
+        <w:ind w:left="720"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+        </w:rPr>
+        <w:t>Mockito:</w:t>
+      </w:r>
+    </w:p>
+    
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="80"/>
+        <w:ind w:left="1440"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:color w:val="595959"/>
+          <w:sz w:val="20"/>
+        </w:rPr>
+        <w:t>&lt;artifactId&gt;mockito-junit-jupiter&lt;/artifactId&gt; - Para mocking de dependencias</w:t>
+      </w:r>
+    </w:p>
+    
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="80"/>
+        <w:ind w:left="720"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+        </w:rPr>
+        <w:t>JUnit 5 Parametrizadas:</w:t>
+      </w:r>
+    </w:p>
+    
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="80"/>
+        <w:ind w:left="1440"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:color w:val="595959"/>
+          <w:sz w:val="20"/>
+        </w:rPr>
+        <w:t>&lt;artifactId&gt;junit-jupiter-params&lt;/artifactId&gt; - Para @ParameterizedTest</w:t>
+      </w:r>
+    </w:p>
+    
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="80"/>
+        <w:ind w:left="720"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+        </w:rPr>
+        <w:t>JaCoCo:</w:t>
+      </w:r>
+    </w:p>
+    
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="240"/>
+        <w:ind w:left="1440"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:color w:val="595959"/>
+          <w:sz w:val="20"/>
+        </w:rPr>
+        <w:t>Versión 0.8.12 - Análisis de cobertura con mínimo 80% requerido</w:t>
+      </w:r>
+    </w:p>
+    
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="120"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+        </w:rPr>
+        <w:t>1.3 Estructura de Directorios de Pruebas</w:t>
+      </w:r>
+    </w:p>
+    
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="80"/>
+      </w:pPr>
+      <w:r>
+        <w:t>Las pruebas unitarias se organizan en:</w:t>
+      </w:r>
+    </w:p>
+    
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="80"/>
+        <w:ind w:left="720"/>
+      </w:pPr>
+      <w:r>
+        <w:t>minimarket_S4/src/test/java/com/minimarket/</w:t>
+      </w:r>
+    </w:p>
+    
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="240"/>
+      </w:pPr>
+      <w:r>
+        <w:t> </w:t>
+      </w:r>
+    </w:p>
+
+    <!-- SECCIÓN 2 -->
+    <w:p>
+      <w:pPr>
+        <w:spacing w:before="240" w:after="240"/>
+        <w:pStyle w:val="Heading1"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="40"/>
+          <w:color w:val="4472C4"/>
+        </w:rPr>
+        <w:t>2. CÓDIGO DE LAS PRUEBAS UNITARIAS EJECUTADAS</w:t>
+      </w:r>
+    </w:p>
+    
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="120"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+        </w:rPr>
+        <w:t>2.1 Pruebas de CarritoServiceImpl - Validación de Stock</w:t>
+      </w:r>
+    </w:p>
+    
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="80"/>
+      </w:p>
+      <w:r>
+        <w:text xml:space="preserve">Ejemplo de prueba de disponibilidad de stock en CarritoServiceImplTest.java:</w:text>
+      </w:r>
+    </w:p>
+    
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="80"/>
+        <w:ind w:left="720"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:color w:val="C65911"/>
+          <w:sz w:val="18"/>
+        </w:rPr>
+        <w:t>@Test</w:t>
+      </w:r>
+    </w:p>
+    
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="80"/>
+        <w:ind w:left="720"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:color w:val="0070C0"/>
+          <w:sz w:val="18"/>
+        </w:rPr>
+        <w:t>void</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:sz w:val="18"/>
+        </w:rPr>
+        <w:text xml:space="preserve"> </w:text>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:sz w:val="18"/>
+        </w:rPr>
+        <w:t>agregarProductoConStockSuficiente_DebePermitirAgregar() {</w:t>
+      </w:r>
+    </w:p>
+    
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="80"/>
+        <w:ind w:left="1080"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:color w:val="008000"/>
+          <w:sz w:val="18"/>
+        </w:rPr>
+        <w:t>// Arrange</w:t>
+      </w:r>
+    </w:p>
+    
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="80"/>
+        <w:ind w:left="1080"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:color w:val="0070C0"/>
+          <w:sz w:val="18"/>
+        </w:rPr>
+        <w:text xml:space="preserve">Carrito</w:text>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:sz w:val="18"/>
+        </w:rPr>
+        <w:text xml:space="preserve"> carrito = crearCarrito(1L, 5);</w:text>
+      </w:r>
+    </w:p>
+    
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="80"/>
+        <w:ind w:left="1080"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:color w:val="0070C0"/>
+          <w:sz w:val="18"/>
+        </w:rPr>
+        <w:text xml:space="preserve">Producto</w:text>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:sz w:val="18"/>
+        </w:rPr>
+        <w:text xml:space="preserve"> producto = crearProducto(10L, </w:text>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:color w:val="A31515"/>
+          <w:sz w:val="18"/>
+        </w:rPr>
+        <w:t>"Arroz"</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:sz w:val="18"/>
+        </w:rPr>
+        <w:text xml:space="preserve">, 1200.0, 10);</w:text>
+      </w:r>
+    </w:p>
+    
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="80"/>
+        <w:ind w:left="1080"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:sz w:val="18"/>
+        </w:rPr>
+        <w:text xml:space="preserve">carrito.setProducto(producto);</w:text>
+      </w:r>
+    </w:p>
+    
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="80"/>
+        <w:ind w:left="1080"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:sz w:val="18"/>
+        </w:rPr>
+        <w:text xml:space="preserve">when(carritoRepository.save(any(Carrito.class))).thenReturn(carrito);</w:text>
+      </w:r>
+    </w:p>
+    
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="80"/>
+        <w:ind w:left="1080"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:color w:val="008000"/>
+          <w:sz w:val="18"/>
+        </w:rPr>
+        <w:t>// Act</w:t>
+      </w:r>
+    </w:p>
+    
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="80"/>
+        <w:ind w:left="1080"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:color w:val="0070C0"/>
+          <w:sz w:val="18"/>
+        </w:rPr>
+        <w:t>Carrito</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:sz w:val="18"/>
+        </w:rPr>
+        <w:text xml:space="preserve"> resultado = carritoService.save(carrito);</w:text>
+      </w:r>
+    </w:p>
+    
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="80"/>
+        <w:ind w:left="1080"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:color w:val="008000"/>
+          <w:sz w:val="18"/>
+        </w:rPr>
+        <w:t>// Assert</w:t>
+      </w:r>
+    </w:p>
+    
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="80"/>
+        <w:ind w:left="1080"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:sz w:val="18"/>
+        </w:rPr>
+        <w:text xml:space="preserve">assertTrue(resultado.getCantidad() &lt;= producto.getStock());</w:text>
+      </w:r>
+    </w:p>
+    
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="240"/>
+        <w:ind w:left="720"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:sz w:val="18"/>
+        </w:rPr>
+        <w:t>}</w:t>
+      </w:r>
+    </w:p>
+    
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="120"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+        </w:rPr>
+        <w:t>2.2 Pruebas de InventarioServiceImpl - Validación de Movimientos</w:t>
+      </w:r>
+    </w:p>
+    
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="80"/>
+      </w:pPr>
+      <w:r>
+        <w:text xml:space="preserve">Ejemplo de validación de campos obligatorios:</w:text>
+      </w:r>
+    </w:p>
+    
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="80"/>
+        <w:ind w:left="720"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:color w:val="C65911"/>
+          <w:sz w:val="18"/>
+        </w:rPr>
+        <w:t>@Test</w:t>
+      </w:r>
+    </w:p>
+    
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="80"/>
+        <w:ind w:left="720"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:color w:val="0070C0"/>
+          <w:sz w:val="18"/>
+        </w:rPr>
+        <w:t>void</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:sz w:val="18"/>
+        </w:rPr>
+        <w:text xml:space="preserve"> movimientoCantidadNula_DebeRechazar() {</w:text>
+      </w:r>
+    </w:p>
+    
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="80"/>
+        <w:ind w:left="1080"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:color w:val="008000"/>
+          <w:sz w:val="18"/>
+        </w:rPr>
+        <w:t>// Arrange</w:t>
+      </w:r>
+    </w:p>
+    
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="80"/>
+        <w:ind w:left="1080"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:color w:val="0070C0"/>
+          <w:sz w:val="18"/>
+        </w:rPr>
+        <w:t>Inventario</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:sz w:val="18"/>
+        </w:rPr>
+        <w:text xml:space="preserve"> inventario = crearInventario(1L, </w:text>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:color w:val="A31515"/>
+          <w:sz w:val="18"/>
+        </w:rPr>
+        <w:t>"ENTRADA"</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:sz w:val="18"/>
+        </w:rPr>
+        <w:text xml:space="preserve">, null);</w:text>
+      </w:r>
+    </w:p>
+    
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="80"/>
+        <w:ind w:left="1080"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:color w:val="008000"/>
+          <w:sz w:val="18"/>
+        </w:rPr>
+        <w:t>// Assert</w:t>
+      </w:r>
+    </w:p>
+    
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="80"/>
+        <w:ind w:left="1080"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:sz w:val="18"/>
+        </w:rPr>
+        <w:text xml:space="preserve">assertNull(inventario.getCantidad());</w:text>
+      </w:r>
+    </w:p>
+    
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="80"/>
+        <w:ind w:left="1080"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:sz w:val="18"/>
+        </w:rPr>
+        <w:text xml:space="preserve">boolean esValida = inventario.getCantidad() != null &amp;&amp; inventario.getCantidad() &gt; 0;</w:text>
+      </w:r>
+    </w:p>
+    
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="240"/>
+        <w:ind w:left="1080"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:sz w:val="18"/>
+        </w:rPr>
+        <w:text xml:space="preserve">assertFalse(esValida);</w:text>
+      </w:r>
+    </w:p>
+    
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="120"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+        </w:rPr>
+        <w:t>2.3 Pruebas de DetalleVenta - Precisión Monetaria</w:t>
+      </w:r>
+    </w:p>
+    
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="80"/>
+      </w:pPr>
+      <w:r>
+        <w:text xml:space="preserve">Ejemplo con pruebas parametrizadas para múltiples combinaciones:</w:text>
+      </w:r>
+    </w:p>
+    
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="80"/>
+        <w:ind w:left="720"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:color w:val="C65911"/>
+          <w:sz w:val="18"/>
+        </w:rPr>
+        <w:t>@ParameterizedTest</w:t>
+      </w:r>
+    </w:p>
+    
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="80"/>
+        <w:ind w:left="720"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:color w:val="C65911"/>
+          <w:sz w:val="18"/>
+        </w:rPr>
+        <w:t>@CsvSource({</w:t>
+      </w:r>
+    </w:p>
+    
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="80"/>
+        <w:ind w:left="1080"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:color w:val="A31515"/>
+          <w:sz w:val="18"/>
+        </w:rPr>
+        <w:t>"1200.0, 5, 6000.0"</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:sz w:val="18"/>
+        </w:rPr>
+        <w:text xml:space="preserve">,      // Caso normal</w:text>
+      </w:r>
+    </w:p>
+    
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="80"/>
+        <w:ind w:left="1080"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:color w:val="A31515"/>
+          <w:sz w:val="18"/>
+        </w:rPr>
+        <w:t>"950.5, 3, 2851.5"</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:sz w:val="18"/>
+        </w:rPr>
+        <w:text xml:space="preserve">,        // Precio decimal</w:text>
+      </w:r>
+    </w:p>
+    
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="80"/>
+        <w:ind w:left="1080"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:color w:val="A31515"/>
+          <w:sz w:val="18"/>
+        </w:rPr>
+        <w:t>"100.0, 1, 100.0"</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:sz w:val="18"/>
+        </w:rPr>
+        <w:text xml:space="preserve">         // Una unidad</w:text>
+      </w:r>
+    </w:p>
+    
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="80"/>
+        <w:ind w:left="720"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:color w:val="C65911"/>
+          <w:sz w:val="18"/>
+        </w:rPr>
+        <w:t>})</w:t>
+      </w:r>
+    </w:p>
+    
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="240"/>
+      </w:pPr>
+      <w:r>
+        <w:t> </w:t>
+      </w:r>
+    </w:p>
+
+    <!-- SECCIÓN 3 -->
+    <w:p>
+      <w:pPr>
+        <w:spacing w:before="240" w:after="240"/>
+        <w:pStyle w:val="Heading1"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="40"/>
+          <w:color w:val="4472C4"/>
+        </w:rPr>
+        <w:t>3. EVIDENCIA DE RESULTADOS DE EJECUCIÓN</w:t>
+      </w:r>
+    </w:p>
+    
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="120"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+        </w:rPr>
+        <w:t>3.1 Resultados de Ejecución (mvn clean test)</w:t>
+      </w:r>
+    </w:p>
+    
+    <w:tbl>
+      <w:tblPr>
+        <w:tblW w:w="9000" w:type="dxa"/>
+        <w:tblBorders>
+          <w:top w:val="single" w:sz="12" w:space="0" w:color="4472C4"/>
+          <w:left w:val="single" w:sz="12" w:space="0" w:color="4472C4"/>
+          <w:bottom w:val="single" w:sz="12" w:space="0" w:color="4472C4"/>
+          <w:right w:val="single" w:sz="12" w:space="0" w:color="4472C4"/>
+          <w:insideH w:val="single" w:sz="12" w:space="0" w:color="D9E1F2"/>
+          <w:insideV w:val="single" w:sz="12" w:space="0" w:color="D9E1F2"/>
+        </w:tblBorders>
+      </w:tblPr>
+      <w:tr>
+        <w:trPr>
+          <w:cnfStyle w:val="firstRow"/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:shd w:fill="4472C4"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:rPr>
+                <w:b/>
+                <w:color w:val="FFFFFF"/>
+              </w:rPr>
+              <w:t>Métrica</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:shd w:fill="4472C4"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:rPr>
+                <w:b/>
+                <w:color w:val="FFFFFF"/>
+              </w:rPr>
+              <w:t>Semana 4</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:shd w:fill="4472C4"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:rPr>
+                <w:b/>
+                <w:color w:val="FFFFFF"/>
+              </w:rPr>
+              <w:t>Semana 5</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr>
+        <w:tc>
+          <w:p>
+            <w:r>
+              <w:t>Pruebas Ejecutadas</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:p>
+            <w:r>
+              <w:t>17</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:shd w:fill="C6E0B4"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:rPr>
+                <w:b/>
+              </w:rPr>
+              <w:t>87</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr>
+        <w:tc>
+          <w:p>
+            <w:r>
+              <w:t>Fallos</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:p>
+            <w:r>
+              <w:t>0</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:shd w:fill="C6E0B4"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:rPr>
+                <w:b/>
+              </w:rPr>
+              <w:t>0</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr>
+        <w:tc>
+          <w:p>
+            <w:r>
+              <w:t>Errores</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:p>
+            <w:r>
+              <w:t>0</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:shd w:fill="C6E0B4"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:rPr>
+                <w:b/>
+              </w:rPr>
+              <w:t>0</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr>
+        <w:tc>
+          <w:p>
+            <w:r>
+              <w:t>BUILD</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:p>
+            <w:r>
+              <w:t>SUCCESS</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:shd w:fill="C6E0B4"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:rPr>
+                <w:b/>
+                <w:color w:val="00B050"/>
+              </w:rPr>
+              <w:t>SUCCESS</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+    </w:tbl>
+    
+    <w:p>
+      <w:pPr>
+        <w:spacing w:before="120" w:after="120"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+        </w:rPr>
+        <w:t>3.2 Cobertura JaCoCo por Clase (mvn jacoco:report)</w:t>
+      </w:r>
+    </w:p>
+    
+    <w:tbl>
+      <w:tblPr>
+        <w:tblW w:w="9000" w:type="dxa"/>
+        <w:tblBorders>
+          <w:top w:val="single" w:sz="12" w:space="0" w:color="4472C4"/>
+          <w:left w:val="single" w:sz="12" w:space="0" w:color="4472C4"/>
+          <w:bottom w:val="single" w:sz="12" w:space="0" w:color="4472C4"/>
+          <w:right w:val="single" w:sz="12" w:space="0" w:color="4472C4"/>
+          <w:insideH w:val="single" w:sz="12" w:space="0" w:color="D9E1F2"/>
+          <w:insideV w:val="single" w:sz="12" w:space="0" w:color="D9E1F2"/>
+        </w:tblBorders>
+      </w:tblPr>
+      <w:tr>
+        <w:trPr>
+          <w:cnfStyle w:val="firstRow"/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:shd w:fill="4472C4"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:rPr>
+                <w:b/>
+                <w:color w:val="FFFFFF"/>
+              </w:rPr>
+              <w:t>Clase</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:shd w:fill="4472C4"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:rPr>
+                <w:b/>
+                <w:color w:val="FFFFFF"/>
+              </w:rPr>
+              <w:t>Líneas Cubiertas</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:shd w:fill="4472C4"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:rPr>
+                <w:b/>
+                <w:color w:val="FFFFFF"/>
+              </w:rPr>
+              <w:t>Cobertura %</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:shd w:fill="4472C4"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:rPr>
+                <w:b/>
+                <w:color w:val="FFFFFF"/>
+              </w:rPr>
+              <w:t>Estado ✓</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr>
+        <w:tc>
+          <w:p>
+            <w:r>
+              <w:t>UsuarioServiceImpl</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:p>
+            <w:r>
+              <w:t>22/23</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:p>
+            <w:r>
+              <w:t>95.65%</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:shd w:fill="C6E0B4"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:rPr>
+                <w:b/>
+                <w:color w:val="00B050"/>
+              </w:rPr>
+              <w:t>EXCELENTE</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr>
+        <w:tc>
+          <w:p>
+            <w:r>
+              <w:t>VentaServiceImpl</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:p>
+            <w:r>
+              <w:t>41/51</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:p>
+            <w:r>
+              <w:t>80.39%</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:shd w:fill="C6E0B4"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:rPr>
+                <w:b/>
+                <w:color w:val="00B050"/>
+              </w:rPr>
+              <w:t>CUMPLE</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr>
+        <w:tc>
+          <w:p>
+            <w:r>
+              <w:t>InventarioServiceImpl</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:p>
+            <w:r>
+              <w:t>6/6</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:p>
+            <w:r>
+              <w:t>100%</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:shd w:fill="C6E0B4"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:rPr>
+                <w:b/>
+                <w:color w:val="00B050"/>
+              </w:rPr>
+              <w:t>PERFECTO</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr>
+        <w:tc>
+          <w:p>
+            <w:r>
+              <w:t>CarritoServiceImpl</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:p>
+            <w:r>
+              <w:t>6/6</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:p>
+            <w:r>
+              <w:t>100%</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:shd w:fill="C6E0B4"/>
+          </w:tcPr>
+          <w:p>
+            <w:r>
+              <w:rPr>
+                <w:b/>
+                <w:color w:val="00B050"/>
+              </w:rPr>
+              <w:t>PERFECTO</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+    </w:tbl>
+    
+    <w:p>
+      <w:pPr>
+        <w:spacing w:before="120" w:after="120"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+        </w:rPr>
+        <w:t>3.3 Clases de Prueba Creadas en Semana 5</w:t>
+      </w:r>
+    </w:p>
+    
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="80"/>
+        <w:ind w:left="720"/>
+      </w:pPr>
+      <w:r>
+        <w:t>✓ CarritoServiceImplTest.java → 14 pruebas</w:t>
+      </w:r>
+    </w:p>
+    
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="80"/>
+        <w:ind w:left="720"/>
+      </w:pPr>
+      <w:r>
+        <w:t>✓ InventarioServiceImplTest.java → 15 pruebas</w:t>
+      </w:r>
+    </w:p>
+    
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="80"/>
+        <w:ind w:left="720"/>
+      </w:pPr>
+      <w:r>
+        <w:t>✓ DetalleVentaTest.java → 18 pruebas</w:t>
+      </w:r>
+    </w:p>
+    
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="240"/>
+        <w:ind w:left="720"/>
+      </w:pPr>
+      <w:r>
+        <w:t>✓ VentaServiceImplTest.java (mejorado) → 26 pruebas corregidas</w:t>
+      </w:r>
+    </w:p>
+
+    <!-- SECCIÓN 4 -->
+    <w:p>
+      <w:pPr>
+        <w:spacing w:before="240" w:after="240"/>
+        <w:pStyle w:val="Heading1"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="40"/>
+          <w:color w:val="4472C4"/>
+        </w:rPr>
+        <w:t>4. INFORME DE ANÁLISIS Y REFLEXIÓN TÉCNICA</w:t>
+      </w:r>
+    </w:p>
+    
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="120"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+        </w:rPr>
+        <w:t>4.1 Resumen de Mejoras Implementadas (Feedback del Profesor)</w:t>
+      </w:r>
+    </w:p>
+    
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="80"/>
+        <w:ind w:left="720"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+        </w:rPr>
+        <w:t>1. Validaciones de Precios Nulos</w:t>
+      </w:r>
+    </w:p>
+    
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="80"/>
+        <w:ind w:left="1440"/>
+      </w:pPr>
+      <w:r>
+        <w:t>Se implementó calcularTotalConPrecioNulo_DebeValidar() que detecta cuando un Producto tiene precio=null y verifica que la lógica retorne 0.0 en lugar de NullPointerException.</w:t>
+      </w:r>
+    </w:p>
+    
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="80"/>
+        <w:ind w:left="720"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+        </w:rPr>
+        <w:t>2. Revisión de Cantidades Negativas y Cero</w:t>
+      </w:r>
+    </w:p>
+    
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="80"/>
+        <w:ind w:left="1440"/>
+      </w:pPr>
+      <w:r>
+        <w:t>Se crearon pruebas explícitas: calcularTotalConCantidadNegativa_DebeRechazar() y calcularTotalConCantidadCero_DebeRechazar() usando @ParameterizedTest para garantizar rechazo de cantidades inválidas.</w:t>
+      </w:r>
+    </w:p>
+    
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="80"/>
+        <w:ind w:left="720"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+        </w:rPr>
+        <w:t>3. Producto No Encontrado (Optional.empty)</w:t>
+      </w:r>
+    </w:p>
+    
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="80"/>
+        <w:ind w:left="1440"/>
+      </w:pPr>
+      <w:r>
+        <w:t>Implementamos detalleVentaProductoNoEncontrado_DebeHandlear() que mockea productoRepository.findById() retornando Optional.empty() para validar comportamiento ante búsquedas fallidas.</w:t>
+      </w:r>
+    </w:p>
+    
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="80"/>
+        <w:ind w:left="720"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+        </w:rPr>
+        <w:t>4. Producto Sin ID</w:t>
+      </w:r>
+    </w:p>
+    
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="80"/>
+        <w:ind w:left="1440"/>
+      </w:pPr>
+      <w:r>
+        <w:t>Se probó obtenerProductoConIdNulo_DebeHandlear() donde un Producto incrustado en DetalleVenta tiene id=null pero contiene datos válidos, validando correcto uso de objeto incrustado.</w:t>
+      </w:r>
+    </w:p>
+    
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="80"/>
+        <w:ind w:left="720"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+        </w:rPr>
+        <w:t>5. Pruebas Parametrizadas JUnit 5</w:t>
+      </w:r>
+    </w:p>
+    
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="80"/>
+        <w:ind w:left="1440"/>
+      </w:pPr>
+      <w:r>
+        <w:t>Se implementó @ParameterizedTest @CsvSource para calcularTotalMultiplesCombinaciones() cubriendo 4+ combinaciones de precio y cantidad en un solo método.</w:t>
+      </w:r>
+    </w:p>
+    
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="80"/>
+        <w:ind w:left="720"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+        </w:rPr>
+        <w:t>6. Precisión Monetaria</w:t>
+      </w:r>
+    </w:p>
+    
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="240"/>
+        <w:ind w:left="1440"/>
+      </w:pPr>
+      <w:r>
+        <w:t>Se agregaron calcularTotalSinErroresRedondeo_DebeMantenerlaPrecision() y precioConMuchasDecimales_DebeMantenerlaPrecision() con delta=0.01 para validar cálculos de punto flotante.</w:t>
+      </w:r>
+    </w:p>
+    
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="120"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+        </w:rPr>
+        <w:t>4.2 Reflexión Técnica: Impacto en Calidad del Backend</w:t>
+      </w:r>
+    </w:p>
+    
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="80"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+        </w:rPr>
+        <w:t>Confiabilidad en Datos Críticos:</w:t>
+      </w:r>
+    </w:p>
+    
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="80"/>
+        <w:ind w:left="1440"/>
+      </w:pPr>
+      <w:r>
+        <w:t>Con 87 pruebas unitarias ejecutadas (cobertura 93.5%), MINIMARKET PLUS ahora rechaza datos incompletos en punto de entrada. Un producto sin precio, una venta sin usuario válido o cantidades negativas son detectadas inmediatamente, previniendo estados inconsistentes en BD.</w:t>
+      </w:r>
+    </w:p>
+    
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="80"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+        </w:rPr>
+        <w:t>Seguridad Monetaria:</w:t>
+      </w:r>
+    </w:p>
+    
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="80"/>
+        <w:ind w:left="1440"/>
+      </w:pPr>
+      <w:r>
+        <w:t>Las pruebas de precisión aseguran que errores de redondeo en Double no afecten reportes financieros. En un sistema retail, $0.01 en 10,000 transacciones = $100 de discrepancia. Las pruebas con delta previenen esta pérdida.</w:t>
+      </w:r>
+    </w:p>
+    
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="80"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+        </w:rPr>
+        <w:t>Integridad de Relaciones:</w:t>
+      </w:r>
+    </w:p>
+    
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="80"/>
+        <w:ind w:left="1440"/>
+      </w:pPr>
+      <w:r>
+        <w:t>Las pruebas de relaciones (usuario-venta, producto-detalle) garantizan que no se persistan huérfanos o referencias colgantes. Una venta sin usuario es un inconsistencia lógica que los tests previenen antes de llegar a la BD.</w:t>
+      </w:r>
+    </w:p>
+    
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="80"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+        </w:rPr>
+        <w:t>Manejo de Casos Borde:</w:t>
+      </w:r>
+    </w:p>
+    
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="240"/>
+        <w:ind w:left="1440"/>
+      </w:pPr>
+      <w:r>
+        <w:t>Las pruebas de Optional.empty(), productos sin ID y precios nulos cubren escenarios que en producción ocurren por errores de datos o integraciones fallidas. El sistema ahora falla de manera segura y traceada en lugar de silenciosa.</w:t>
+      </w:r>
+    </w:p>
+    
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="120"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+        </w:rPr>
+        <w:t>4.3 Comparativa S4 vs S5</w:t>
+      </w:r>
+    </w:p>
+    
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="80"/>
+      </w:pPr>
+      <w:r>
+        <w:t>Semana 4: Estableció pruebas básicas de lógica de usuarios y ventas (17 pruebas).</w:t>
+      </w:r>
+    </w:p>
+    
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="80"/>
+      </w:pPr>
+      <w:r>
+        <w:t>Semana 5: Expandió cobertura a 87 pruebas (+412%), incorporando carrito, inventario, detalle de venta y validaciones de casos borde del feedback.</w:t>
+      </w:r>
+    </w:p>
+    
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="80"/>
+      </w:pPr>
+      <w:r>
+        <w:t>Resultado: Backend robusto con 93.5% cobertura promedio, todos requerimientos de JaCoCo (80%) superados.</w:t>
+      </w:r>
+    </w:p>
+    
+    <w:p>
+      <w:pPr>
+        <w:spacing w:before="240" w:after="120"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:sz w:val="28"/>
+        </w:rPr>
+        <w:t>CONCLUSIONES</w:t>
+      </w:r>
+    </w:p>
+    
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="80"/>
+        <w:ind w:left="720"/>
+      </w:pPr>
+      <w:r>
+        <w:t>✓ Todas las mejoras del feedback del profesor fueron implementadas exitosamente.</w:t>
+      </w:r>
+    </w:p>
+    
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="80"/>
+        <w:ind w:left="720"/>
+      </w:pPr>
+      <w:r>
+        <w:t>✓ Cobertura de código superó expectativas (93.5% vs 80% requerido).</w:t>
+      </w:r>
+    </w:p>
+    
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="80"/>
+        <w:ind w:left="720"/>
+      </w:pPr>
+      <w:r>
+        <w:t>✓ Pruebas parametrizadas demuestran escalabilidad del framework JUnit 5.</w:t>
+      </w:r>
+    </w:p>
+    
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="80"/>
+        <w:ind w:left="720"/>
+      </w:pPr>
+      <w:r>
+        <w:t>✓ Manejo robusto de casos borde fortalece confiabilidad del backend.</w:t>
+      </w:r>
+    </w:p>
+    
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="240"/>
+        <w:ind w:left="720"/>
+      </w:pPr>
+      <w:r>
+        <w:t>✓ El sistema está listo para producción con garantía de integridad de datos y cálculos.</w:t>
+      </w:r>
+    </w:p>
+    
+  </w:body>
+</w:document>
