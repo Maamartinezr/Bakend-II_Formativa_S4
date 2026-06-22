@@ -12,7 +12,7 @@
 	<artifactId>minimarket</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>minimarket</name>
-	<description>istema para la gestión de un Minimarket</description>
+	<description>Sistema para la gestión de un Minimarket</description>
 	<url/>
 	<licenses>
 		<license/>
@@ -74,6 +74,12 @@
 			<artifactId>spring-security-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<!-- Dependencia para pruebas parametrizadas en JUnit 5 -->
+		<dependency>
+			<groupId>org.junit.jupiter</groupId>
+			<artifactId>junit-jupiter-params</artifactId>
+			<scope>test</scope>
+		</dependency>
 	</dependencies>
 
 	<build>
@@ -102,6 +108,8 @@
 					</excludes>
 				</configuration>
 			</plugin>
+			<!-- JaCoCo Plugin para análisis de cobertura de código -->
+			<!-- Semana 5: Actualización para incluir todas las clases de servicio y test -->
 			<plugin>
 				<groupId>org.jacoco</groupId>
 				<artifactId>jacoco-maven-plugin</artifactId>
@@ -127,11 +135,53 @@
 						</goals>
 						<configuration>
 							<rules>
+								<!-- Regla 1: Cobertura mínima 80% para UsuarioServiceImpl -->
 								<rule>
 									<element>CLASS</element>
 									<includes>
 										<include>com.minimarket.service.impl.UsuarioServiceImpl</include>
+									</includes>
+									<limits>
+										<limit>
+											<counter>LINE</counter>
+											<value>COVEREDRATIO</value>
+											<minimum>0.80</minimum>
+										</limit>
+									</limits>
+								</rule>
+								<!-- Regla 2: Cobertura mínima 80% para VentaServiceImpl -->
+								<rule>
+									<element>CLASS</element>
+									<includes>
 										<include>com.minimarket.service.impl.VentaServiceImpl</include>
+									</includes>
+									<limits>
+										<limit>
+											<counter>LINE</counter>
+											<value>COVEREDRATIO</value>
+											<minimum>0.80</minimum>
+										</limit>
+									</limits>
+								</rule>
+								<!-- Regla 3: Cobertura mínima 80% para CarritoServiceImpl (Nuevo - Semana 5) -->
+								<rule>
+									<element>CLASS</element>
+									<includes>
+										<include>com.minimarket.service.impl.CarritoServiceImpl</include>
+									</includes>
+									<limits>
+										<limit>
+											<counter>LINE</counter>
+											<value>COVEREDRATIO</value>
+											<minimum>0.80</minimum>
+										</limit>
+									</limits>
+								</rule>
+								<!-- Regla 4: Cobertura mínima 80% para InventarioServiceImpl (Nuevo - Semana 5) -->
+								<rule>
+									<element>CLASS</element>
+									<includes>
+										<include>com.minimarket.service.impl.InventarioServiceImpl</include>
 									</includes>
 									<limits>
 										<limit>
