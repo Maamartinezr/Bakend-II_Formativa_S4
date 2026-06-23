@@ -1,4 +1,5 @@
 from pathlib import Path
+import re
 
 from docx import Document
 from docx.enum.table import WD_TABLE_ALIGNMENT, WD_CELL_VERTICAL_ALIGNMENT
@@ -16,6 +17,12 @@ INK = RGBColor(34, 34, 34)
 MUTED = RGBColor(90, 90, 90)
 LIGHT_GRAY = "F2F4F7"
 BORDER = "B7C3D0"
+
+
+def clean_text(text):
+    if text is None:
+        return ""
+    return re.sub(r"[\x00-\x08\x0B\x0C\x0E-\x1F]", "", str(text))
 
 
 def set_font(run, name="Calibri", size=11, bold=False, color=INK):
@@ -103,7 +110,7 @@ def set_cell_width(cell, width_dxa):
 
 
 def add_heading(doc, text, level):
-    paragraph = doc.add_heading(text, level=level)
+    paragraph = doc.add_heading(clean_text(text), level=level)
     set_paragraph_format(paragraph, before=16 if level == 1 else 12, after=8 if level == 1 else 6)
     for run in paragraph.runs:
         set_font(run, size=16 if level == 1 else 13, bold=True, color=BLUE if level <= 2 else DARK_BLUE)
@@ -113,7 +120,7 @@ def add_heading(doc, text, level):
 def add_paragraph(doc, text):
     paragraph = doc.add_paragraph()
     set_paragraph_format(paragraph)
-    run = paragraph.add_run(text)
+    run = paragraph.add_run(clean_text(text))
     set_font(run)
     return paragraph
 
@@ -123,7 +130,7 @@ def add_bullet(doc, text):
     set_paragraph_format(paragraph, after=6, line_spacing=1.167)
     paragraph.paragraph_format.left_indent = Inches(0.5)
     paragraph.paragraph_format.first_line_indent = Inches(-0.25)
-    run = paragraph.add_run(text)
+    run = paragraph.add_run(clean_text(text))
     set_font(run)
     return paragraph
 
@@ -131,7 +138,7 @@ def add_bullet(doc, text):
 def add_code(doc, text):
     paragraph = doc.add_paragraph()
     set_paragraph_format(paragraph, before=4, after=8)
-    run = paragraph.add_run(text)
+    run = paragraph.add_run(clean_text(text))
     set_font(run, name="Consolas", size=10, color=RGBColor(40, 40, 40))
     return paragraph
 
@@ -152,11 +159,11 @@ def add_label_value_table(doc, rows):
         set_cell_shading(cells[0], LIGHT_GRAY)
         p_label = cells[0].paragraphs[0]
         set_paragraph_format(p_label, after=0)
-        r_label = p_label.add_run(label)
+        r_label = p_label.add_run(clean_text(label))
         set_font(r_label, bold=True, color=DARK_BLUE)
         p_value = cells[1].paragraphs[0]
         set_paragraph_format(p_value, after=0)
-        r_value = p_value.add_run(value)
+        r_value = p_value.add_run(clean_text(value))
         set_font(r_value)
     return table
 
@@ -177,7 +184,7 @@ def add_coverage_table(doc):
         cell.vertical_alignment = WD_CELL_VERTICAL_ALIGNMENT.CENTER
         paragraph = cell.paragraphs[0]
         set_paragraph_format(paragraph, after=0)
-        run = paragraph.add_run(headers[idx])
+        run = paragraph.add_run(clean_text(headers[idx]))
         set_font(run, bold=True, color=DARK_BLUE)
     rows = [["UsuarioServiceImpl", "22", "1", "95.65%"], ["VentaServiceImpl", "41", "10", "80.39%"]]
     for row in rows:
@@ -189,7 +196,7 @@ def add_coverage_table(doc):
             paragraph = cell.paragraphs[0]
             paragraph.alignment = WD_ALIGN_PARAGRAPH.LEFT if idx == 0 else WD_ALIGN_PARAGRAPH.CENTER
             set_paragraph_format(paragraph, after=0)
-            run = paragraph.add_run(row[idx])
+            run = paragraph.add_run(clean_text(row[idx]))
             set_font(run, name="Consolas" if idx == 0 else "Calibri")
 
 
@@ -254,7 +261,7 @@ def build_document():
         "mvnw.cmd verify para validar pruebas y cobertura en una sola ejecucion.",
     ]:
         add_bullet(doc, item)
-    add_code(doc, r".mvnw.cmd verify")
+    add_code(doc, r".\mvnw.cmd verify")
     add_heading(doc, "3. Codigo de las pruebas unitarias ejecutadas", 1)
     add_heading(doc, "3.1 CarritoServiceImplTest", 2)
     add_paragraph(doc, "Valida stock suficiente, usuario asociado al carrito y manejo de productos sin ID.")
